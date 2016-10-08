@@ -1,5 +1,5 @@
 DATA SEGMENT
-    BUFF1   DW  9922H，5F00H,00FFH,8A56H,5544H
+    BUFF1   DW  9922H,5F00H,00FFH,8A56H,5544H
     BUFF2   DW  5 DUP (?)
 CNT1    EQU 5
 CNT2    EQU 8
@@ -20,7 +20,7 @@ NEXT:   MOV AX,[BX+SI]
         INC BX
         INC BX
         DEC CH
-        JNZ NETX
+        JNZ NEXT
         
         HLT
 CODE    ENDS
